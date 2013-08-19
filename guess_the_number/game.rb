@@ -5,12 +5,12 @@ while true
   print "Guess a number between 0 and #{max}: " 
   response = gets.chomp
 
-  puts correct_answer
+ 
   perfect_response = response.to_i
 
 
   case 
-  when response.to_i.to_s != response
+  when perfect_response != response
     puts "Invalid, input must enter a number between 0 and #{max}."
   when perfect_response > correct_answer
     puts "Too high, try again."
